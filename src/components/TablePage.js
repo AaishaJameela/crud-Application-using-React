@@ -8,18 +8,29 @@ import {
   TableRow,
   tableCellClasses,
 } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import { styled } from "@mui/material/styles";
 import { AddNewButton, DeleteButton, EditButton } from "./ButtonsPages";
 
-// const [dataInTable, setdataInTable] = useState({
-//   Id: 1,
-//   firstname: "pooja",
-//   lastname: "veeranki",
-//   mobile: "1214536",
-//   email: "abvc@gmail.com",
+// const tableRows = details.map((info) => {
+//   return (
+//     <tr>
+//       <td>{info.E_Id}</td>
+//       <td>{info.E_firstname}</td>
+//       <td>{info.E_surname}</td>
+//       <td>{info.E_mobile}</td>
+//       <td>{info.E_email}</td>
+//     </tr>
+//   );
 // });
-
+function datainTable(Id, Firstname, Lastname, mobile, emailId) {
+  return { Id, Firstname, Lastname, mobile, emailId };
+}
+const rowsData = [
+  datainTable(1, "pooja", "veeranki", 39256037486, "ajkdhjh"),
+  datainTable(2, "udhay", "nidhi", 4370635, "ldfjk"),
+  datainTable(3, "aaisha", "jameela", 7657834, "uagsdfg"),
+];
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.black,
@@ -55,32 +66,23 @@ export const TablePage = () => {
             <StyledTableCell />
           </TableHead>
           <TableBody>
-            <StyledTableRow>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>
-                <DeleteButton />
-              </StyledTableCell>
-              <StyledTableCell>
-                <EditButton />
-              </StyledTableCell>
-            </StyledTableRow>
-            <StyledTableRow>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>abc</StyledTableCell>
-              <StyledTableCell>
-                <DeleteButton />
-              </StyledTableCell>
-              <StyledTableCell>
-                <EditButton />
-              </StyledTableCell>
-            </StyledTableRow>
+            {rowsData.map((row) => (
+              <StyledTableRow key={row.name}>
+                <StyledTableCell component="th" scope="row">
+                  {row.Id}
+                </StyledTableCell>
+                <StyledTableCell>{row.Firstname}</StyledTableCell>
+                <StyledTableCell>{row.Lastname}</StyledTableCell>
+                <StyledTableCell>{row.mobile}</StyledTableCell>
+                <StyledTableCell>{row.emailId}</StyledTableCell>
+                <StyledTableCell>
+                  <DeleteButton />
+                </StyledTableCell>
+                <StyledTableCell>
+                  <EditButton />
+                </StyledTableCell>
+              </StyledTableRow>
+            ))}
           </TableBody>
         </Table>
       </TableContainer>

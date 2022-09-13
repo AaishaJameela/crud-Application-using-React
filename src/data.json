@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "firstname": "pooja",
+    "lastname": "veeranki",
+    "mobile": 98876543,
+    "email": "pooja@email.com"
+  },
+  {
+    "Id": 2,
+    "firstname": "aasiha",
+    "lastname": "jameela",
+    "mobile": 27539436,
+    "email": "aasiha@email.com"
+  },
+  {
+    "Id": 1,
+    "firstname": "udhay",
+    "lastname": "nidhi",
+    "mobile": 76347024,
+    "email": "udhay@email.com"
+  }
+]
