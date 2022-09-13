@@ -1,31 +1,25 @@
-import React from 'react';
-import {
-  Nav,
-  NavBtn,
-  NavBtnLink,
-} from './NavbarElements';
+import React from "react";
+import { Nav, NavBtn, NavBtnLink } from "./NavbarElements";
 const Navbar = () => {
   return (
     <>
       <Nav>
-        
-          <NavBtn>
-          <NavBtnLink to='/' activeStyle>
+        <NavBtn>
+          <NavBtnLink to="/" activeStyle>
             HOME
           </NavBtnLink>
-          </NavBtn>
-          <NavBtn>
-          <NavBtnLink to='/form' activeStyle>
+        </NavBtn>
+        <NavBtn>
+          <NavBtnLink to="/form" activeStyle>
             FORM
           </NavBtnLink>
-          </NavBtn>
-          <NavBtn>
-          <NavBtnLink to='/table' activeStyle>
+        </NavBtn>
+        <NavBtn>
+          <NavBtnLink to="/table" activeStyle>
             TABLE
           </NavBtnLink>
-          </NavBtn>
-          
-          </Nav>
+        </NavBtn>
+      </Nav>
     </>
   );
 };
