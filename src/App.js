@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage/Homepage";
 import Form from "./pages/Form/Form";
 import Table from "./pages/Table/Table";
@@ -8,15 +8,15 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-
+    <Router>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='' element={<Form />} />
-        <Route path='' element={<Table />} />
+        <Route path='/' element={<Homepage/> } />
+        <Route path='/form' element={<Form/> } />
+        <Route path='/table' element={<Table/> } />
       </Routes>
-      </div>
+      </Router>
+
   
       
     

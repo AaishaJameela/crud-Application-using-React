@@ -6,7 +6,7 @@ const Homepage = () => {
       style={{
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'Right',
+        
         
       }}
     >
