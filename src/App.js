@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+//import { useState } from "react";
+import { FormControl, Input, InputLabel, Button } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <center>
+        <h1>FORM</h1>
+        <FormControl>
+          <InputLabel htmlFor="my-input">First Name</InputLabel>
+          <Input id="my-input" aria-describedby="my-helper-text" />
+        </FormControl>
+        <br />
+        <br />
+        <FormControl>
+          <InputLabel htmlFor="my-input">Last Name</InputLabel>
+          <Input id="my-input" aria-describedby="my-helper-text" />
+        </FormControl>
+        <br />
+        <br />
+        <FormControl>
+          <InputLabel htmlFor="my-input">Mobile Number</InputLabel>
+          <Input id="my-input" aria-describedby="my-helper-text" />
+        </FormControl>
+        <br />
+        <br />
+        <FormControl>
+          <InputLabel htmlFor="my-input">E-mail ID</InputLabel>
+          <Input id="my-input" aria-describedby="my-helper-text" />
+        </FormControl>
+        <br />
+        <br />
+        <Button variant="contained" color="error">
+          Clear
+        </Button>
+        &nbsp;
+        <Button variant="contained" color="success">
+          Submit
+        </Button>
+      </center>
     </div>
   );
 }
