@@ -31,6 +31,8 @@ export const TablePage = () => {
             <TableCell align="center"> ID </TableCell>
             <TableCell align="center"> MOBILE</TableCell>
             <TableCell align="center"> EMAIL</TableCell>
+            <TableCell align="center"> del</TableCell>
+            <TableCell align="center"> Edit</TableCell>
           </TableHead>
           <TableBody align="left">
             <StyledTableRow>
@@ -38,12 +40,28 @@ export const TablePage = () => {
               <TableCell> FIRST NAME</TableCell>
               <TableCell> FIRST NAME</TableCell>
               <TableCell> FIRST NAME</TableCell>
+              <TableCell> FIRST NAME</TableCell>
             </StyledTableRow>
-            <TableRow>
-              <TableCell>p</TableCell>
-              <TableCell>p</TableCell>
-              <TableCell>p</TableCell>
-            </TableRow>
+            <StyledTableRow>
+              <TableCell> FIRST NAME</TableCell>
+              <TableCell>fn </TableCell>
+              <TableCell> FIRST NAME</TableCell>
+              <TableCell> FIRST NAME</TableCell>
+              <TableCell> FIRST NAME</TableCell>
+            </StyledTableRow>
+            <StyledTableRow>
+              <TableCell> FIRST NAME</TableCell>
+              <TableCell> fn</TableCell>
+              <TableCell> FIRST NAME</TableCell>
+              <TableCell> FIRST NAME</TableCell>
+              <TableCell> FIRST NAME</TableCell>
+            </StyledTableRow>
+            <StyledTableRow>
+              <TableCell> </TableCell>
+              <TableCell> FIRST NAME</TableCell>
+              <TableCell> FIRST NAME</TableCell>
+              <TableCell> FIRST NAME</TableCell>
+            </StyledTableRow>
           </TableBody>
         </Table>
       </TableContainer>
