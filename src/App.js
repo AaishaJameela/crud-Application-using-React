@@ -1,45 +1,20 @@
-//import { useState } from "react";
-import { FormControl, Input, InputLabel, Button } from "@mui/material";
+import EmployeeDetails from "./components/form.js";
+import TAble from "./components/table.js";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="main">
       <center>
-        <h1>FORM</h1>
-        <FormControl>
-          <InputLabel htmlFor="my-input">First Name</InputLabel>
-          <Input id="my-input" aria-describedby="my-helper-text" />
-        </FormControl>
-        <br />
-        <br />
-        <FormControl>
-          <InputLabel htmlFor="my-input">Last Name</InputLabel>
-          <Input id="my-input" aria-describedby="my-helper-text" />
-        </FormControl>
-        <br />
-        <br />
-        <FormControl>
-          <InputLabel htmlFor="my-input">Mobile Number</InputLabel>
-          <Input id="my-input" aria-describedby="my-helper-text" />
-        </FormControl>
-        <br />
-        <br />
-        <FormControl>
-          <InputLabel htmlFor="my-input">E-mail ID</InputLabel>
-          <Input id="my-input" aria-describedby="my-helper-text" />
-        </FormControl>
-        <br />
-        <br />
-        <Button variant="contained" color="error">
-          Clear
-        </Button>
-        &nbsp;
-        <Button variant="contained" color="success">
-          Submit
-        </Button>
+        <h2 className="main-header">EMPLOYEE DETAILS</h2>
       </center>
+      <div>
+        <Routes>
+          <Route path="/" element={<EmployeeDetails />} />
+          <Route path="table" element={<TAble />} />
+        </Routes>
+      </div>
     </div>
   );
 }
-
 export default App;
