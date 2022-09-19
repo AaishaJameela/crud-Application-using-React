@@ -60,47 +60,6 @@ export default function TAble() {
                 <TableCell>
                   <Button onClick={() => onDelete(data.id)}>Delete</Button>
                 </TableCell>
-                <br />
-
-                <TableCell align="right">{data.id}</TableCell>
-                <TableCell align="right">{data.firstName}</TableCell>
-                <TableCell align="right">{data.lastName}</TableCell>
-                <TableCell align="right">{data.mobileNumber}</TableCell>
-                <TableCell align="right">{data.emailID}&nbsp;</TableCell>
-                <TableCell>
-                  <Button onClick={() => onDelete(data.id)}>Delete</Button>
-                </TableCell>
-                <br />
-
-                <TableCell align="right">{data.id}</TableCell>
-                <TableCell align="right">{data.firstName}</TableCell>
-                <TableCell align="right">{data.lastName}</TableCell>
-                <TableCell align="right">{data.mobileNumber}</TableCell>
-                <TableCell align="right">{data.emailID}&nbsp;</TableCell>
-                <TableCell>
-                  <Button onClick={() => onDelete(data.id)}>Delete</Button>
-                </TableCell>
-                <br />
-
-                <TableCell align="right">{data.id}</TableCell>
-                <TableCell align="right">{data.firstName}</TableCell>
-                <TableCell align="right">{data.lastName}</TableCell>
-                <TableCell align="right">{data.mobileNumber}</TableCell>
-                <TableCell align="right">{data.emailID}&nbsp;</TableCell>
-                <TableCell>
-                  <Button onClick={() => onDelete(data.id)}>Delete</Button>
-                </TableCell>
-                <br />
-
-                <TableCell align="right">{data.id}</TableCell>
-                <TableCell align="right">{data.firstName}</TableCell>
-                <TableCell align="right">{data.lastName}</TableCell>
-                <TableCell align="right">{data.mobileNumber}</TableCell>
-                <TableCell align="right">{data.emailID}&nbsp;</TableCell>
-                <TableCell>
-                  <Button onClick={() => onDelete(data.id)}>Delete</Button>
-                </TableCell>
-                <br />
               </TableRow>
             );
           })}
