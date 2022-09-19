@@ -60,6 +60,7 @@ export default function TAble() {
                 <TableCell>
                   <Button onClick={() => onDelete(data.id)}>Delete</Button>
                 </TableCell>
+                <br />
 
                 <TableCell align="right">{data.id}</TableCell>
                 <TableCell align="right">{data.firstName}</TableCell>
@@ -69,6 +70,7 @@ export default function TAble() {
                 <TableCell>
                   <Button onClick={() => onDelete(data.id)}>Delete</Button>
                 </TableCell>
+                <br />
 
                 <TableCell align="right">{data.id}</TableCell>
                 <TableCell align="right">{data.firstName}</TableCell>
@@ -78,6 +80,7 @@ export default function TAble() {
                 <TableCell>
                   <Button onClick={() => onDelete(data.id)}>Delete</Button>
                 </TableCell>
+                <br />
 
                 <TableCell align="right">{data.id}</TableCell>
                 <TableCell align="right">{data.firstName}</TableCell>
@@ -87,6 +90,7 @@ export default function TAble() {
                 <TableCell>
                   <Button onClick={() => onDelete(data.id)}>Delete</Button>
                 </TableCell>
+                <br />
 
                 <TableCell align="right">{data.id}</TableCell>
                 <TableCell align="right">{data.firstName}</TableCell>
@@ -96,6 +100,7 @@ export default function TAble() {
                 <TableCell>
                   <Button onClick={() => onDelete(data.id)}>Delete</Button>
                 </TableCell>
+                <br />
               </TableRow>
             );
           })}
