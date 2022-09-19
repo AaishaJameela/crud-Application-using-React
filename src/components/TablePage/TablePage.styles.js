@@ -1,5 +1,9 @@
 import { styled } from "@mui/material/styles";
 import { TableRow, TableCell, tableCellClasses } from "@mui/material";
+export const TABLEPage = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
