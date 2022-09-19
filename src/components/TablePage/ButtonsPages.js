@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-import { FormPage } from "./FormPage";
+import { FormPage } from "../FormPage/FormPage";
 export const DeleteButton = () => {
   return (
     <div>
@@ -41,7 +41,7 @@ export const EditButton = () => {
 export const AddNewButton = () => {
   return (
     <div>
-      <Button variant="contained" onClick={FormPage()}>
+      <Button variant="contained" onClick={() => FormPage()}>
         add member
       </Button>
     </div>

@@ -1,5 +1,5 @@
 import "./App.css";
-import { TablePage } from "./components/TablePage";
+import { TablePage } from "./components/TablePage/TablePage";
 
 function App() {
   return (
