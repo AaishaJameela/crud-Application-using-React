@@ -44,6 +44,7 @@ export default function TAble() {
             <TableCell align="right">E_LastName &nbsp;</TableCell>
             <TableCell align="right">E_Mobile Number &nbsp;</TableCell>
             <TableCell align="right">E_Email ID &nbsp;</TableCell>
+            <TableCell align="right"></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -55,7 +56,7 @@ export default function TAble() {
                 <TableCell align="right">{data.firstName}</TableCell>
                 <TableCell align="right">{data.lastName}</TableCell>
                 <TableCell align="right">{data.mobileNumber}</TableCell>
-                <TableCell align="right">{data.emailID}</TableCell>
+                <TableCell align="right">{data.emailID}&nbsp;</TableCell>
                 <TableCell>
                   <Button onClick={() => onDelete(data.id)}>Delete</Button>
                 </TableCell>
