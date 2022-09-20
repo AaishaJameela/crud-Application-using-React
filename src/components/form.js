@@ -15,7 +15,7 @@ const EmployeeDetails = () => {
   const [mobileNumber, setMobileNumber] = useState("");
   const [emailID, setEmailID] = useState("");
   const postData = () => {
-    axios.post(`https://60fbca4591156a0017b4c8a7.mockapi.io/fakeData`, {
+    axios.post(`https://63297677d2c97d8c5267db00.mockapi.io/EmployeeDetails`, {
       firstName,
       lastName,
       mobileNumber,

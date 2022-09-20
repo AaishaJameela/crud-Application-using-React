@@ -14,21 +14,23 @@ export default function TAble() {
   const [APIData, setAPIData] = useState([]);
   useEffect(() => {
     axios
-      .get(`https://60fbca4591156a0017b4c8a7.mockapi.io/fakeData`)
+      .get(`https://63297677d2c97d8c5267db00.mockapi.io/EmployeeDetails`)
       .then((response) => {
         setAPIData(response.data);
       });
   }, []);
   const getData = () => {
     axios
-      .get(`https://60fbca4591156a0017b4c8a7.mockapi.io/fakeData`)
+      .get(`https://63297677d2c97d8c5267db00.mockapi.io/EmployeeDetails`)
       .then((getData) => {
         setAPIData(getData.data);
       });
   };
   const onDelete = (id) => {
     axios
-      .delete(`https://60fbca4591156a0017b4c8a7.mockapi.io/fakeData${id}`)
+      .delete(
+        `https://63297677d2c97d8c5267db00.mockapi.io/EmployeeDetails${id}`
+      )
       .then(() => {
         getData();
       });
@@ -48,21 +50,23 @@ export default function TAble() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {APIData.map((data) => {
-            <TableRow key={data.id}></TableRow>;
-            return (
-              <TableRow>
-                <TableCell align="right">{data.id}</TableCell>
-                <TableCell align="right">{data.firstName}</TableCell>
-                <TableCell align="right">{data.lastName}</TableCell>
-                <TableCell align="right">{data.mobileNumber}</TableCell>
-                <TableCell align="right">{data.emailID}&nbsp;</TableCell>
-                <TableCell>
-                  <Button onClick={() => onDelete(data.id)}>Delete</Button>
-                </TableCell>
-              </TableRow>
-            );
-          })}
+          {APIData.map((data) => (
+            <TableRow
+              key={data.id}
+              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+            >
+              <TableCell component="th" scope="row" />
+              {data.id}
+              <TableCell align="right">{data.id}</TableCell>
+              <TableCell align="right">{data.firstName}</TableCell>
+              <TableCell align="right">{data.lastName}</TableCell>
+              <TableCell align="right">{data.mobileNumber}</TableCell>
+              <TableCell align="right">{data.emailID}&nbsp;</TableCell>
+              <TableCell>
+                <Button onClick={() => onDelete(data.id)}>Delete</Button>
+              </TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
     </TableContainer>
