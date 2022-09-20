@@ -5,19 +5,13 @@ const Navbar = () => {
     <>
       <Nav>
         <NavBtn>
-          <NavBtnLink to="/" activeStyle>
-            HOME
-          </NavBtnLink>
+          <NavBtnLink to="/">HOME</NavBtnLink>
         </NavBtn>
         <NavBtn>
-          <NavBtnLink to="/form" activeStyle>
-            FORM
-          </NavBtnLink>
+          <NavBtnLink to="/form">FORM</NavBtnLink>
         </NavBtn>
         <NavBtn>
-          <NavBtnLink to="/table" activeStyle>
-            TABLE
-          </NavBtnLink>
+          <NavBtnLink to="/table">TABLE</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
